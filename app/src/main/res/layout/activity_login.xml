@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66D8E6"
+    android:gravity="center"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/bird" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_login"
+        android:textStyle="bold"
+        android:fontFamily="@font/gilroy_bold"
+        android:layout_marginStart="99dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="28sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorText"
+            android:hint="@string/enter_email"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorText"
+            android:inputType="textPassword"
+            android:hint="@string/enter_password"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/gilroy_light"
+            android:padding="12dp" />
+
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorAccent"
+                android:text="@string/btn_login"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to create account "
+            android:id="@+id/btnSignUp"
+            android:textStyle="italic"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/gilroy_light"
+            android:layout_marginStart="149dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="19sp" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
